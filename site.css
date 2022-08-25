@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Secular+One&display=swap');
+
+body{
+   font-family: 'Secular One', sans-serif;
+   background-image: url(1.jpg);
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-position: center;
+   height: 100vh
+
+}
+
+
+
+.clock-container{
+   display: grid;
+   grid-template-columns: repeat(4,1fr);
+   align-items: center;
+   margin: auto;
+   width: 60%;
+   height: 100vh;
+   gap: 1rem;
+}
+
+#hours, #minutes, #seconds{
+   /* background-color: bisque; */
+   text-align: center;
+   background-color: #f9c8bad5;
+   
+} 
+h2{
+   padding-top: 1rem;
+   color:white;
+   font-size: 4rem;
+   
+}
+
+h4{
+   margin: 100px 0 0;
+   background-color: #4d9caeca;
+   padding: 1rem;
+   color: white;
+
+}
+#amPm{
+   background-color: #4d9caeca;
+   text-align:center;
+   width: 100px;
+   margin-top: 270px;
+   padding: .8rem;
+}
+
+@media screen and (max-width:564px) {
+   .clock-container{
+      grid-template-columns: repeat(1,1fr);
+   }
+   #amPm{
+      margin-top: 0;
+   }
+
+   body{
+      height: 1200px
+   }
+}
